@@ -1,37 +1,17 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
-const Text = () => {
-  const circleRef = useRef(null);
-
-  const handleMouseMove = (e) => {
-    if (circleRef.current) {
-      const x = e.ClientX - 15;
-      const y = e.ClientY - 15;
-
-      circleRef.current.style.transform = `translate( ${x}px , ${y}px)`;
+export function CustomLocalStorage(key, initialValue) {
+  const [value, setValue] = useState(() => {
+    try {
+      const saved = localStorage.getItem(key);
+      return saved ? JSON.parse(saved) : initialValue;
+    } catch (error) {
+      return initialValue;
     }
-  };
+  });
 
-  return (
-    <>
-      <div
-        onMouseMove={handleMouseMove}
-        style={{
-          width: "100vw",
-          height: "100vh",
-        }}
-      >
-        <div
-          ref={circleRef}
-          style={{
-            width: "30px",
-            height: "30px",
-            willChange: transform,
-          }}
-        ></div>
-      </div>
-    </>
-  );
-};
-
-export default Text;
+  useEffect(() => {
+    localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value]);
+  return [key, initialValue];
+}
