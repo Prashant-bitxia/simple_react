@@ -3,8 +3,10 @@ import Firing_Gun from "./Components/Machine_Round/Firing_Gun";
 import Int_2 from "./Components/Machine_Round/Int_2";
 import Making_Accordian from "./Components/Machine_Round/Making_Accordian";
 import Making_Chips_Input from "./Components/Machine_Round/Making_Chips_Input";
+import Making_File_Explorer from "./Components/Machine_Round/Making_File_Explorer";
 import Making_Nested_Checkboxes from "./Components/Machine_Round/Making_Nested_Checkboxes";
 import Making_OTP_Input from "./Components/Machine_Round/Making_OTP_Input";
+import Making_Progressbar from "./Components/Machine_Round/Making_Progressbar";
 import Making_TodoList from "./Components/Machine_Round/Making_TodoList";
 import MouseClick_Circle_follow from "./Components/Machine_Round/MouseClick_Circle_follow";
 import AppRouter from "./Components/ReduxPratice/AppRouter";
@@ -22,7 +24,9 @@ function App() {
       {/* <Making_TodoList /> */}
       {/* <Making_Chips_Input/> */}
       {/* <Making_Nested_Checkboxes /> */}
-      <Making_OTP_Input />
+      {/* <Making_OTP_Input /> */}
+      {/* <Making_Progressbar /> */}
+      <Making_File_Explorer/>
     </>
   );
 }
