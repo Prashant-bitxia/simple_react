@@ -2,6 +2,7 @@ import Expense_Calculate from "./Components/Machine_Round/Expense_Calculate";
 import Firing_Gun from "./Components/Machine_Round/Firing_Gun";
 import Int_2 from "./Components/Machine_Round/Int_2";
 import Making_Accordian from "./Components/Machine_Round/Making_Accordian";
+import Making_AutoComplete_SearchBar from "./Components/Machine_Round/Making_AutoComplete_SearchBar";
 import Making_Chips_Input from "./Components/Machine_Round/Making_Chips_Input";
 import Making_File_Explorer from "./Components/Machine_Round/Making_File_Explorer";
 import Making_Nested_Checkboxes from "./Components/Machine_Round/Making_Nested_Checkboxes";
@@ -26,7 +27,8 @@ function App() {
       {/* <Making_Nested_Checkboxes /> */}
       {/* <Making_OTP_Input /> */}
       {/* <Making_Progressbar /> */}
-      <Making_File_Explorer/>
+      {/* <Making_File_Explorer/> */}
+      <Making_AutoComplete_SearchBar />
     </>
   );
 }

@@ -1,0 +1,7 @@
+.result_container{
+    overflow: auto;
+    max-height: 25rem;
+}
+.result:hover {
+    background-color: beige;
+}
