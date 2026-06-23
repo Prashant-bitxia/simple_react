@@ -1,0 +1,18 @@
+.tabs_container {
+    display: flex;
+
+}
+
+.tabs {
+    border: 2px solid black;
+    font-size: 3rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.profile_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
